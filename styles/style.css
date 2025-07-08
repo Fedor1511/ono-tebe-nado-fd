@@ -5,7 +5,14 @@
     padding: 92px 24px 96px 24px;
 }
 
+.header_link {
+    text-decoration: none;
+}
+
 .header_links-list {
+    font-family: Raleway, sans-serif;
+    font-weight: normal;
+    font-size: 18px;
     display: grid;
     grid-template-columns: 67px 182.48px 142px;
     width: 391.49px;
@@ -16,35 +23,24 @@
 }
 
 .header__links-list-item {
-    font-family: Raleway, sans-serif;
-    font-weight: normal;
-    font-size: 18px;
     text-decoration: underline;
     text-underline-offset: 4px;
     list-style-type: circle;
 }
 
 .header__links-list-item_no-bullet {
+    
     list-style-type: none;
 }
 
 .header_logo {
     width: 129.11px;
     height: 104.65px;
-    padding: 5px 184px 2px 36px;
-}
-
-.address {
-    font-size: 18.5px;
+    padding: 1.16px 193.86px 2px 45.55px;
 }
 
 .header_address {
-    display: grid;
-    align-items: center;
-    font-style: normal;
-}
-
-.footer_address {
+    font-size: 18px;
     display: grid;
     align-items: center;
     font-style: normal;
@@ -62,7 +58,7 @@
 }
 
 .cover {
-    height: 757px;
+    min-height: 757px;
     background-blend-mode: multiply;
     background-color: rgba(0, 0, 0, 0.6);
     background-image: url(../images/cover.jpg);
@@ -73,12 +69,9 @@
 .cover__title {
     display: grid;
     color: #ffffff;
-    width: 1100px;
-    padding-top: 165px;
-    padding-right: 50px;
-    /*padding-left: 50px;*/
+    width: 1000px;
+    padding: 165px 50px 107px 50px;
     text-align: justify;
-    /*padding: 165px 50px 237px 50px;*/
 }
 
 .aligned-text {
@@ -88,17 +81,17 @@
     text-transform: uppercase;
     letter-spacing: 0.3em;
     line-height: 115%;
-    padding-left: 50px;
 }
 
 .aligned-text_center {
     text-align: center;
     padding-left: 44.5px;
+    padding-top: 20px;
 }
 
 .aligned-text_right {
     text-align: right;
-    
+    padding-top: 20px;
 }
 
 .cover__description {
@@ -106,14 +99,14 @@
    grid-template-columns: 637px 256px;
    color: #ffffff;
    width: 1000px;
-   padding: 106px 50px 50px 50px;
+   padding-left: 50px;
 }
 
 .cover__description-text {
-    font-family: Raleway;
+    font-family: Raleway, Arial, Helvetica, sans-serif;
     font-weight: normal;
     font-size: 22px;
-    word-spacing: 15px;
+    word-spacing: 18.5px;
     text-transform: uppercase;
     padding-top: 11px;
 }
@@ -121,7 +114,7 @@
 .bet-button {
     color: #ffffff;
     border-width: 1px;
-    border-style: dashed;
+    border-style: solid;
     border-color: #ffffff;
     align-items: center;
     width: 256px;
@@ -137,7 +130,7 @@
 
 .lots {
     width: 1052px;
-    height: 723px;
+    min-height: 723px;
     padding: 180px 24px 120px 24px;
 }
 
@@ -163,29 +156,21 @@
     width: 334px;
     height: 596px;
     color: #ffffff;
-}
-
-.card_type_film {
     display: grid;
     grid-template-rows: repeat(2, 1fr);
     background-blend-mode: multiply;
     background-color: rgba(0, 0, 0, 0.6);
+}
+
+.card_type_film {
     background-image: url(../images/card-lot-01.jpg);
 }
 
 .card_type_book {
-    display: grid;
-    grid-template-rows: repeat(2, 1fr);
-    background-blend-mode: multiply;
-    background-color: rgba(0, 0, 0, 0.6);
     background-image: url(../images/card-lot-02.jpg);
 }
 
 .card_type_picture {
-    display: grid;
-    grid-template-rows: repeat(2, 1fr);
-    background-blend-mode: multiply;
-    background-color: rgba(0, 0, 0, 0.6);
     background-image: url(../images/card-lot-03.jpg);
 }
 
@@ -251,12 +236,14 @@
 }
 
 .about__text {
+    display: grid;
+    row-gap: 24px;
     font-family: Raleway;
-    font-weight: medium;
     font-size: 20px;
-    grid-column-start: 2;
     padding-left: 359px;
-    padding-right: 5px;
+    line-height: 24px;
+    padding-bottom: 24px;
+    word-spacing: 0.6px;
 }
 
 .text_nizhe {
@@ -269,13 +256,18 @@
 }
 
 .footer {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    align-items: start;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
     justify-content: space-between;
 }
 
 .footer_address {
+    font-size: 18px;
+    line-height: 24.3px;
+    display: grid;
+    align-items: center;
+    font-style: normal;
     padding-left: 50px;
     padding-bottom: 82px;
 }
@@ -288,13 +280,17 @@
 
 .footer__menu-list {
     list-style-type: none;
+    font-size: 18px;
 }
 
 .footer__social-list {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    justify-items: right;
-    width: 333px;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 240px;
+    padding-left: 100px;
+    padding-right: 50px;
     list-style-type: none;
 }
 
