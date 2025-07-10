@@ -5,12 +5,16 @@
     padding: 92px 24px 96px 24px;
 }
 
-.header_link {
+.no_underline {
     text-decoration: none;
 }
 
+.header__links-list-item_no-bullet {
+    list-style-type: none;
+}
+
 .header_links-list {
-    font-family: Raleway, sans-serif;
+    font-family: Raleway, Arial, Helvetica, sans-serif;
     font-weight: normal;
     font-size: 18px;
     display: grid;
@@ -28,19 +32,15 @@
     list-style-type: circle;
 }
 
-.header__links-list-item_no-bullet {
-    
-    list-style-type: none;
-}
-
 .header_logo {
     width: 129.11px;
     height: 104.65px;
     padding: 1.16px 193.86px 2px 45.55px;
 }
 
-.header_address {
+.address {
     font-size: 18px;
+    line-height: 24.3px;
     display: grid;
     align-items: center;
     font-style: normal;
@@ -75,7 +75,7 @@
 }
 
 .aligned-text {
-    font-family: Raleway, sans-serif;
+    font-family: Raleway, Arial, Helvetica, sans-serif;
     font-weight: bold;
     font-size: 100px;
     text-transform: uppercase;
@@ -121,7 +121,7 @@
     height: 51px;
     position: relative;
     background: transparent;
-    font-family: Raleway;
+    font-family: Raleway, Arial, Helvetica, sans-serif;
     font-weight: normal;
     font-size: 22px;
     text-transform: uppercase;
@@ -130,13 +130,13 @@
 
 .lots {
     width: 1052px;
-    min-height: 723px;
+    height: 723px;
     padding: 180px 24px 120px 24px;
 }
 
 .lots__heading {
     color: black;
-    font-family: Raleway;
+    font-family: Raleway, Arial, Helvetica, sans-serif;
     font-weight: bold;
     font-size: 40px;
     text-transform: uppercase;
@@ -154,12 +154,15 @@
 
 .lots__card-list-item {
     width: 334px;
-    height: 596px;
     color: #ffffff;
-    display: grid;
-    grid-template-rows: repeat(2, 1fr);
+}
+
+.card_overlay {
+    background-color: rgba(0, 0, 0, 0.6); 
     background-blend-mode: multiply;
-    background-color: rgba(0, 0, 0, 0.6);
+    height: 596px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .card_type_film {
@@ -176,7 +179,7 @@
 
 .card__title {
     padding: 48px 40px 0 40px;
-    font-family: Raleway;
+    font-family: Raleway, Arial, Helvetica, sans-serif;
     font-weight: bold;
     font-size: 22px;
     text-transform: uppercase;
@@ -185,14 +188,14 @@
 
 .card__text {
     padding: 0 40px 48px 40px;  
-    font-family: Raleway;
+    font-family: Raleway, Arial, Helvetica, sans-serif;
     font-weight: normal;
     font-size: 20px;
     align-content: end;
 }
 
 .lots__look-more-link {
-    font-family: Raleway;
+    font-family: Raleway, Arial, Helvetica, sans-serif;
     font-weight: medium;
     font-size: 20px;
     text-decoration: underline;
@@ -228,7 +231,7 @@
 
 .about__title {
     width: 291px;
-    font-family: Raleway;
+    font-family: Raleway, Arial, Helvetica, sans-serif;
     font-weight: bold;
     font-size: 40px;
     text-transform: uppercase;
@@ -238,7 +241,7 @@
 .about__text {
     display: grid;
     row-gap: 24px;
-    font-family: Raleway;
+    font-family: Raleway, Arial, Helvetica, sans-serif;
     font-size: 20px;
     padding-left: 359px;
     line-height: 24px;
@@ -247,7 +250,7 @@
 }
 
 .text_nizhe {
-    font-family: Raleway;
+    font-family: Raleway, Arial, Helvetica, sans-serif;
     font-weight: medium;
     font-size: 20px;
     grid-column-start: 2;
@@ -260,22 +263,14 @@
     flex-wrap: nowrap;
     flex-direction: row;
     justify-content: space-between;
-}
-
-.footer_address {
-    font-size: 18px;
-    line-height: 24.3px;
-    display: grid;
-    align-items: center;
-    font-style: normal;
-    padding-left: 50px;
-    padding-bottom: 82px;
+    padding-bottom: 83px;
 }
 
 .footer__menu {
     display: grid;
     width: 333px;
     text-align: center;
+    padding-left: 50px;
 }
 
 .footer__menu-list {
@@ -283,18 +278,16 @@
     font-size: 18px;
 }
 
-.footer__social-list {
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: row;
+.footer__social-list{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     justify-content: space-between;
-    width: 240px;
-    padding-left: 100px;
     padding-right: 50px;
     list-style-type: none;
 }
 
-.footer__social-icon {
+.footer__social-list_item {
     width: 48px;
     height: 48px;
+    padding-left: 48px;
 }
