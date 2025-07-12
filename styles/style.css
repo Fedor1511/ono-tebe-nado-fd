@@ -53,7 +53,6 @@
 }
 
 .address__text {
-    height: 49px;
     padding-right: 52.52px;
 }
 
@@ -69,9 +68,10 @@
 .cover__title {
     display: grid;
     color: #ffffff;
-    width: 1000px;
-    padding: 165px 50px 107px 50px;
+    width: 100%;
+    padding: 163px 20px 107px 50px;
     text-align: justify;
+    box-sizing: border-box;
 }
 
 .aligned-text {
@@ -85,8 +85,6 @@
 
 .aligned-text_center {
     text-align: center;
-    padding-left: 44.5px;
-    padding-top: 20px;
 }
 
 .aligned-text_right {
@@ -130,7 +128,6 @@
 
 .lots {
     width: 1052px;
-    height: 723px;
     padding: 180px 24px 120px 24px;
 }
 
@@ -157,12 +154,12 @@
     color: #ffffff;
 }
 
-.card_overlay {
-    background-color: rgba(0, 0, 0, 0.6); 
-    background-blend-mode: multiply;
-    height: 596px;
+.card {
     display: flex;
     flex-wrap: wrap;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); 
+    background-blend-mode: multiply;
 }
 
 .card_type_film {
@@ -187,7 +184,7 @@
 }
 
 .card__text {
-    padding: 0 40px 48px 40px;  
+    padding: 30px 40px 48px 40px;  
     font-family: Raleway, Arial, Helvetica, sans-serif;
     font-weight: normal;
     font-size: 20px;
@@ -249,28 +246,21 @@
     word-spacing: 0.6px;
 }
 
-.text_nizhe {
-    font-family: Raleway, Arial, Helvetica, sans-serif;
-    font-weight: medium;
-    font-size: 20px;
-    grid-column-start: 2;
-    padding-top: 24px;
-    padding-left: 359px;
-}
-
 .footer {
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
     justify-content: space-between;
     padding-bottom: 83px;
+    padding-left: 50px;
 }
 
 .footer__menu {
     display: grid;
     width: 333px;
     text-align: center;
-    padding-left: 50px;
+    justify-content: start;
+    padding-left: 90px;
 }
 
 .footer__menu-list {
